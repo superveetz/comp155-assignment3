@@ -1,0 +1,21 @@
+{
+  "name": "ass3-web",
+  "description": "ass3-web",
+  "main": "server/server.js",
+  "authors": [
+    "Alexander.DiVito <alexander.divito@student.ufv.ca>"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/src/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.8"
+  }
+}

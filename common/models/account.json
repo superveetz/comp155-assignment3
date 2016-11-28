@@ -1,0 +1,33 @@
+{
+  "name": "Account",
+  "plural": "Accounts",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "dateOpened": {
+      "type": "date",
+      "default": "$now"
+    },
+    "balance": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "customerId"
+    },
+    "subAccounts": {
+      "type": "hasMany",
+      "model": "SubAccount",
+      "foreignKey": "accountId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

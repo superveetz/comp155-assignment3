@@ -1,0 +1,45 @@
+{
+  "name": "Customer",
+  "plural": "Customers",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "workPhone": {
+      "type": "string"
+    },
+    "homePhone": {
+      "type": "string"
+    },
+    "cellPhone": {
+      "type": "string"
+    },
+    "addrLine1": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "account": {
+      "type": "hasOne",
+      "model": "Account",
+      "foreignKey": "customerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
