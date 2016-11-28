@@ -7,7 +7,7 @@
     "host": "localhost",
     "port": 27017,
     "url": "",
-    "database": "Ass3-Web-Bank",
+    "database": "comp155assignment3",
     "password": "",
     "name": "mongoDs",
     "user": "",
