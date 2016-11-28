@@ -6,9 +6,9 @@ module.exports = {
     "port": process.env.OPENSHIFT_MONGODB_DB_PORT,
     "url": "",
     "database": "comp155assignment3",
-    "password": process.env.OPENSHIFT_MONGODB_DB_PASSWORD,
+    "password": "LHUNn3hCqPnD",
     "name": "mongoDs",
-    "user": process.env.OPENSHIFT_MONGODB_DB_USERNAME,
+    "user": "admin",
     "connector": "mongodb"
   }
 }
