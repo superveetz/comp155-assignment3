@@ -2,13 +2,13 @@
 
 module.exports = {
   "mongoDs": {
-    "host": "localhost",
-    "port": 27017,
+    "host": process.env.OPENSHIFT_MONGODB_DB_HOST,
+    "port": process.env.OPENSHIFT_MONGODB_DB_PORT,
     "url": "",
-    "database": "Ass3-Web-Bank",
-    "password": "",
+    "database": "comp155assignment3",
+    "password": "LHUNn3hCqPnD",
     "name": "mongoDs",
-    "user": "",
+    "user": "admin",
     "connector": "mongodb"
   }
 }
